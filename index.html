@@ -21,7 +21,7 @@
         <a href="#community">Community</a>
         <a href="#contact">Contact</a>
       </div>
-      <a class="nav-cta" href="#community">Join the movement</a>
+      <a class="nav-cta" href="#join">Join the movement</a>
     </div>
   </nav>
 
@@ -115,6 +115,23 @@
           </p>
           <a class="btn btn-primary" href="#contact">Build the full version next</a>
         </aside>
+      </div>
+    </section>
+
+    <!-- Email signup: replace YOUR_FORM_ID with your Formspree form ID (formspree.io) -->
+    <section class="section wrap join-section" id="join">
+      <div class="panel join-panel">
+        <h2 class="join-title">Stay in the loop</h2>
+        <p class="join-desc">Get news, updates, and ecosystem highlights from XRPLedgerAmericas. No spam — just signal.</p>
+        <form class="join-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+          <input type="hidden" name="_subject" value="XRPLedgerAmericas – new signup" />
+          <label for="join-email" class="sr-only">Email</label>
+          <input type="email" id="join-email" name="email" required placeholder="you@example.com" class="join-input" />
+          <label for="join-name" class="sr-only">Name (optional)</label>
+          <input type="text" id="join-name" name="name" placeholder="Name (optional)" class="join-input join-input-optional" />
+          <button type="submit" class="btn btn-primary join-submit">Join</button>
+        </form>
+        <p class="join-note">We’ll only use your email to send occasional updates. Unsubscribe anytime.</p>
       </div>
     </section>
   </main>
